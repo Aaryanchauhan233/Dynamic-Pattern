@@ -692,3 +692,113 @@ for i in range(6):
         else:
             print(" ",end='')
     print()
+
+
+# 1
+# 23
+# 456
+# 78910
+n = int(input("Enter a Number for Row and Column: "))
+num = 1
+for i in range(n):
+    for j in range(n):
+        if j<=i:
+                print(num,end='')
+                num = num+1
+        else:
+            print(" ",end='')
+    print()
+
+
+# printing Sting in right shape Triangle
+# A
+# Aa
+# Aar
+# Aary
+# Aarya
+# Aaryan
+str = input("Enter a String: ")
+for i in range(len(str)):
+    for j in range(len(str)):
+        if j<=i:
+            print(str[j],end='')
+        else:
+            print(" ",end='')
+    print()
+
+
+12345
+1234
+123
+12
+1
+n=int(input("Enter a Number: "))
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+           print(j,end='')
+    print()
+
+# 55555
+# 4444
+# 333
+# 22
+# 1
+
+n = int(input("Enter a number for row: "))
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+        print(i,end='')
+    print()
+
+
+#    *
+#   * *
+#  *   *
+# *******
+k=0
+l=3
+for i in range(4):
+    for j in range(7):
+        if i==3 or (i==1 and j==4 or i==2 and j==5):
+            print("*",end='')
+        elif i==k and j==l:
+            print("*",end='')
+            k+=1
+            l-=1
+        else:
+            print(" ",end='')
+    print()
+
+
+#   *
+#  * *
+# *   *
+#  * *
+#   *
+
+for i in range(5):
+    for j in range(5):
+        if i+j==2 or j-i==2 or i-j==2 or i+j==6:
+            print("*",end='')
+        else:
+            print(" ",end='')
+    print()
+
+
+#   * *   * *
+# *     *     *
+# *           *
+#   *       *
+#     *   *
+#       *
+for i in range(6):
+    for j in range(7):
+        if (i==0 and j%3!=0) or (i==1 and j%3==0) or (i-j==2) or (i+j==8):
+            print("*",end=' ')
+        else:
+            print(" ",end=' ')
+    print()
+
+
+
+
